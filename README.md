@@ -1,33 +1,121 @@
-# Heart Disease Prediction
+# Heart Disease Prediction System
 
-## Description
-This project predicts heart disease using Machine Learning and Deep Learning techniques.
+## Project Overview
+
+This project predicts whether a person is likely to have heart disease using Machine Learning and Deep Learning techniques.
+
+The application uses patient medical data such as age, cholesterol, blood pressure, heart rate, and other medical attributes to predict heart disease risk.
+
+A professional Flask web application interface is also developed for user interaction.
+
+---
 
 ## Technologies Used
+
 - Python
+- Flask
 - Scikit-learn
 - TensorFlow
-- Pandas
 - NumPy
+- Pandas
+- HTML
+- CSS
 
-## Dataset
-Heart Disease Dataset
+---
+
+## Project Structure
+
+```bash
+Heart-Disease-Prediction
+│
+├── data
+├── models
+├── notebooks
+├── static
+├── templates
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
 
 ## Features
-- Data Preprocessing
-- Machine Learning Model Training
-- Deep Learning Model Training
-- Disease Prediction
-- Model Saving and Loading
 
-## Installation
+- Heart disease prediction using ML model
+- Flask web application
+- User-friendly interface
+- Professional frontend design
+- Real-time prediction system
 
+---
+
+## Dataset
+
+Dataset used:
+Heart Disease Dataset
+
+Features include:
+- Age
+- Sex
+- Chest pain type
+- Cholesterol
+- Blood pressure
+- Maximum heart rate
+- ECG results
+- Exercise induced angina
+- And more...
+
+---
+
+## Installation Steps
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/libinvlal07/Heart-Disease-Prediction.git
+```
+
+### 2. Move into Project Folder
+
+```bash
+cd Heart-Disease-Prediction
+```
+
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+### 4. Run Flask Application
 
-## Project Workflow
-1. Data Collection
-2. Data Preprocessing
-3. ML Model Training
-4. DL Model Training
-5. GitHub Upload
+```bash
+python app.py
+```
+
+---
+
+## Output
+
+The application predicts whether the patient:
+
+- Has Heart Disease
+- Does Not Have Heart Disease
+
+---
+
+## Future Improvements
+
+- Add Deep Learning model
+- Deploy project online
+- Add charts and analytics
+- Improve UI with Bootstrap
+- Add user authentication
+
+---
+
+## Author
+
+Libin V Lal

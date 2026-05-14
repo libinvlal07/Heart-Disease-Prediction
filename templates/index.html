@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Heart Disease Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>❤️ Heart Disease Prediction</h1>
+
+        <p class="subtitle">
+            Enter patient medical details
+        </p>
+
+        <form action="/predict" method="POST">
+
+            <input type="number" name="age"
+                   placeholder="Age" required>
+
+            <input type="number" name="sex"
+                   placeholder="Sex (0 = Female, 1 = Male)" required>
+
+            <input type="number" name="cp"
+                   placeholder="Chest Pain Type" required>
+
+            <input type="number" name="trestbps"
+                   placeholder="Blood Pressure" required>
+
+            <input type="number" name="chol"
+                   placeholder="Cholesterol" required>
+
+            <input type="number" name="fbs"
+                   placeholder="Fasting Blood Sugar" required>
+
+            <input type="number" name="restecg"
+                   placeholder="ECG Result" required>
+
+            <input type="number" name="thalach"
+                   placeholder="Maximum Heart Rate" required>
+
+            <input type="number" name="exang"
+                   placeholder="Exercise Angina" required>
+
+            <input type="number" name="oldpeak"
+                   placeholder="Oldpeak" required>
+
+            <input type="number" name="slope"
+                   placeholder="Slope" required>
+
+            <input type="number" name="ca"
+                   placeholder="CA" required>
+
+            <input type="number" name="thal"
+                   placeholder="Thal" required>
+
+            <button type="submit">
+                Predict Heart Disease
+            </button>
+
+        </form>
+
+        <h2>
+            {{ prediction_text }}
+        </h2>
+
+    </div>
+
+</body>
+</html>
